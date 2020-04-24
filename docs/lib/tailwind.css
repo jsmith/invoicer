@@ -366,10 +366,6 @@ table {
   font-weight: 700;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .text-sm {
   font-size: 0.875rem;
 }
@@ -386,25 +382,12 @@ table {
   margin-top: 2rem;
 }
 
-.max-h-full {
-  max-height: 100%;
-}
-
-.p-0 {
-  padding: 0;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-8 {
   padding: 2rem;
-}
-
-.py-0 {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .px-1 {
@@ -425,17 +408,6 @@ table {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.inset-0 {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .shadow-2xl {
@@ -481,4 +453,35 @@ th {
 .a4 {
   height: 297mm;
   width: 210mm;
+}
+
+@media print {
+
+  .print\:h-full {
+    height: 100%;
+  }
+
+  .print\:max-h-full {
+    max-height: 100%;
+  }
+
+  .print\:p-0 {
+    padding: 0;
+  }
+
+  .print\:py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .print\:fixed {
+    position: fixed;
+  }
+
+  .print\:inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }

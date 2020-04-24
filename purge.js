@@ -10,6 +10,15 @@ const purge = async () => {
   const result = await new PurgeCSS().purge({
     content: ["docs/index.html", "docs/lib/*.js"],
     css: ["docs/lib/*.css"],
+    extractors: [
+      {
+        extractor: (content) => {
+          // The print: queries do not work without modifying the extractor
+          return content.match(/[\w-/:]+(?<!:)/g) || [];
+        },
+        extensions: ["js"],
+      },
+    ],
   });
 
   result.map((value) => {
