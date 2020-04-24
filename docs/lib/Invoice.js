@@ -5,7 +5,6 @@ export const Invoice = props => {
     companyName,
     companyAddress,
     companyCityProvincePost,
-    issueDate,
     invoiceNo,
     clientName,
     clientAddress,
@@ -22,11 +21,14 @@ export const Invoice = props => {
     year: "numeric"
   });
   const paymentInfoElements = paymentInfo.map(line => {
-    return /*#__PURE__*/React.createElement("div", null, line);
+    return /*#__PURE__*/React.createElement("div", {
+      key: line
+    }, line);
   });
   const itemElements = items.map(item => {
     return /*#__PURE__*/React.createElement("tr", {
-      "data-iterate": "item"
+      "data-iterate": "item",
+      key: item.description
     }, /*#__PURE__*/React.createElement("td", {
       className: "text-sm py-2 px-2"
     }, /*#__PURE__*/React.createElement("span", null, item.description)), /*#__PURE__*/React.createElement("td", {

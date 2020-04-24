@@ -22,15 +22,5 @@ npx servor --reload
 ## Deployment
 Run the following commands, commit your changes and then push to GitHub :)
 ```
-# build snowpack first
-npx snowpack --optimize --source pika --dest docs/web_modules
-
-# build tailwind
-npx tailwind build src/index.css -o docs/lib/tailwind.css
-
-# build the code :)
-npx babel src/ --out-dir docs/lib --extensions ".ts,.tsx"
-
-# finally copy index.html to docs/
-cp index.html docs/
+./build.sh
 ```
