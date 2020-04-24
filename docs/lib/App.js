@@ -1,4 +1,4 @@
-import React from "/web_modules/react.js";
+import React from "/invoicer/web_modules/react.js";
 import { Invoice } from "./Invoice.js";
 const invoice = {
   companyName: "Jack Smith",

@@ -1,5 +1,5 @@
-import React from "/web_modules/react.js";
-import classNames from "/web_modules/classnames.js";
+import React from "/invoicer/web_modules/react.js";
+import classNames from "/invoicer/web_modules/classnames.js";
 export const Invoice = props => {
   const {
     companyName,
