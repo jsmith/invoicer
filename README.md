@@ -1,3 +1,8 @@
+# Invoicer
+A toy invoice creator using [`Snowpack`](https://www.snowpack.dev/#snowpack)!
+
+![Screen Shot 2020-04-24 at 6 23 55 PM](https://user-images.githubusercontent.com/18077531/80258098-cc3cc480-8658-11ea-8291-16b747ea565b.png)
+
 ## Development
 #### Setup
 ```
@@ -20,7 +25,7 @@ npx servor --reload
 ```
 
 ## Deployment
-Run the following commands, commit your changes and then push to GitHub :)
+Run the following script, commit your changes and then push to GitHub :)
 ```
 ./build.sh
 ```
