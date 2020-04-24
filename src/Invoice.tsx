@@ -32,7 +32,6 @@ export const Invoice = (props: InvoiceProps) => {
     companyName,
     companyAddress,
     companyCityProvincePost,
-    issueDate,
     invoiceNo,
     clientName,
     clientAddress,
@@ -50,12 +49,12 @@ export const Invoice = (props: InvoiceProps) => {
   });
 
   const paymentInfoElements = paymentInfo.map((line) => {
-    return <div>{line}</div>;
+    return <div key={line}>{line}</div>;
   });
 
   const itemElements = items.map((item) => {
     return (
-      <tr data-iterate="item">
+      <tr data-iterate="item" key={item.description}>
         <td className="text-sm py-2 px-2">
           <span>{item.description}</span>
         </td>

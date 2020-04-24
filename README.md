@@ -20,6 +20,7 @@ npx servor --reload
 ```
 
 ## Deployment
+Run the following commands, commit your changes and then push to GitHub :)
 ```
 # build snowpack first
 npx snowpack --optimize --source pika --dest docs/web_modules
