@@ -1,7 +1,7 @@
 # Invoicer
 A toy invoice creator using [`Snowpack`](https://www.snowpack.dev/#snowpack)!
 
-![Screen Shot 2020-04-24 at 6 22 25 PM](https://user-images.githubusercontent.com/18077531/80258013-97307200-8658-11ea-9d33-b0fab2ea5015.png)
+![Screen Shot 2020-04-24 at 6 23 55 PM](https://user-images.githubusercontent.com/18077531/80258098-cc3cc480-8658-11ea-8291-16b747ea565b.png)
 
 ## Development
 #### Setup
